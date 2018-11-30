@@ -36,7 +36,7 @@ fs.readFile('creds.json', 'utf-8', function(err, data) {
 	if (err) throw err;
 
 	creds = JSON.parse(data);
-	client = redis.createClient('redis://' + creds.user + ':' + creds.password + '@' + creds.host + ':' + creds.port);
+	client = redis.createClient('redis://:' + creds.password + '@' + creds.host + ':' + creds.port);
 
 	client.once('ready', function() {
 
