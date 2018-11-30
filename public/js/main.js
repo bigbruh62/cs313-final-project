@@ -4,8 +4,8 @@ $(function () {
 	var chatter_count;
 	$.get('/get_chatters', function(response) {
 		$('.chat-info').text("There are currently " + response.length + " people in the chat");
-		chatter_count = reponse.length;
-});
+		chatter_count = response.length;
+	});
 
 $('#join-chat').click(function() {
 	var username = $.trim($('#username').val());
@@ -105,5 +105,6 @@ $('#join-chat').click(function() {
 			chatter_count--;
 		}
 		$('.chat-info').text("There are currentl " + chatter_count + "people in the chat");
-	})
+	});
+
 });
