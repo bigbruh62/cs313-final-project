@@ -3,7 +3,7 @@ $(function () {
 	var socket = io();
 	var chatter_count;
 	$.get('/get_chatters', function(response) {
-		$('.chat-info').text("There are currently " + response.length + " people in the chat");
+		$('.chat-info').text("There are currently " + response.length + " people chattting");
 		chatter_count = response.length;
 	});
 
@@ -105,7 +105,7 @@ $(function () {
 		} else {
 			chatter_count--;
 		}
-		$('.chat-info').text("There are currentl " + chatter_count + "people in the chat");
+		$('.chat-info').text("There are currently " + chatter_count + "people chatting");
 	});
 
 });
