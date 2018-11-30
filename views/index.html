@@ -4,11 +4,14 @@
 	<title>Web Chat</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.6.0/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
 	<div class="container">
-        <h1>Node.js + Socket.io + Redis Chat | ScaleGrid</h1>
+        <h1>Buddy Chat</h1>
         <div class="join-chat">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" />
@@ -22,8 +25,5 @@
             <input type="button" id="leave-chat" data-username="" value="Leave Chat">
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.6.0/socket.io.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
