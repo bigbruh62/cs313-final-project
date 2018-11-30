@@ -105,7 +105,7 @@ $(function () {
 		} else {
 			chatter_count--;
 		}
-		$('.chat-info').text("There are currently " + chatter_count + "people chatting");
+		$('.chat-info').text("There are currently " + chatter_count + " people chatting");
 	});
 
 });
